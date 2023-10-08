@@ -1,0 +1,57 @@
+header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 0;
+
+    nav {
+      display: flex;
+
+      .left {
+        padding-right: 200px;
+
+        h1 {
+          a {
+            font-size: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #77d693;
+          }
+        }
+      }
+
+      .right {
+        ul {
+          display: flex;
+
+          li {
+            padding: 10px 0 10px 30px;
+
+            a {
+              color: black;
+            }
+
+            &:first-child a {
+              color: #77d693;
+            }
+
+            &:hover a {
+              color: #77d693;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+
+    .get-started-btn {
+      border: none;
+      background-color: #77d693;
+      padding: 8px 25px;
+      border-radius: 20px;
+      color: white;
+    }
+  }
+}
