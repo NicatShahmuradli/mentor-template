@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,500;0,600;0,700;0,800;1,400;1,500;1,700&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12591,7 +12591,15 @@ a {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif !important;
+}
+
+span {
+  font-family: "Poppins", sans-serif !important;
 }
 
 .container {
@@ -12900,95 +12908,85 @@ body {
     width: 100%;
   }
 }
+header {
+  width: 100%;
+  background-color: white;
+}
 header .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 15px 0;
+  margin: 0 390px;
+  padding: 40px 15px;
 }
-header .container nav {
+header .container .col-lg-3 {
+  padding: 0 15px;
   display: flex;
 }
-header .container nav .left {
-  padding-right: 200px;
+header .container .contact_icon {
+  margin-top: 2px;
+  margin-right: 5px;
+  text-align: center;
+  justify-content: center;
 }
-header .container nav .left h1 a {
-  font-size: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #77d693;
-}
-header .container nav .right ul {
-  display: flex;
-}
-header .container nav .right ul li {
-  padding: 10px 0 10px 30px;
-}
-header .container nav .right ul li a {
-  color: black;
-}
-header .container nav .right ul li:first-child a {
-  color: #77d693;
-}
-header .container nav .right ul li:hover a {
-  color: #77d693;
-  transition: 0.3s;
-}
-header .container .get-started-btn {
-  border: none;
-  background-color: #77d693;
-  padding: 8px 25px;
-  border-radius: 20px;
+header .container .contact_icon i {
+  background-color: #1089ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-top: 13px;
   color: white;
 }
-
-.nav-btn {
+header .container .nav-btn {
   background-color: transparent;
   border: none;
-  display: none;
 }
-.nav-btn i {
+header .container .nav-btn i {
   padding: 4px 12px;
   color: gray;
   font-size: 30;
 }
+header nav {
+  background-color: #1089ff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+header nav ul li {
+  padding: 30px;
+  font-size: 25px;
+}
+header nav ul li a {
+  color: white;
+}
 
 #hero {
   width: 100%;
-  height: 80vh;
-  background: url("https://theqna.org/wp-content/uploads/2020/08/MBA-Colleges-in-Australia-for-Indian-Students-2.jpg");
+  height: 90vh;
+  background: url("http://el.commonsupport.com/newwp/lanong/wp-content/uploads/2020/08/featured-image-47.jpg");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
-#hero .row_main h1 {
+
+.row_main {
+  margin-top: 500px;
+  margin-left: 100px;
+}
+.row_main .main {
+  text-align: center;
+}
+.row_main h1 {
   font-size: 50px;
   font-weight: 700;
   color: white;
 }
-#hero .row_main p {
+.row_main p {
   color: white;
-}
-#hero .row_main .btn-primary {
-  border: 2px solid white;
-  background-color: transparent;
-  padding: 5px 30px;
-  border-radius: 25px;
-}
-
-#hero:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero .container {
-  padding-top: 150px;
 }
 
 #about article {
@@ -13002,34 +13000,54 @@ header .container .get-started-btn {
 #about p {
   color: black;
 }
-
-#cards h1 {
-  font-weight: 700;
+#about .col-lg-6 .btn {
+  width: 140px;
+  height: 70px;
+  font-size: 20px;
   text-transform: uppercase;
 }
-#cards .row {
-  margin-top: 30px;
+
+#about_us article .about_icon {
+  padding-bottom: 20px;
+}
+#about_us article .about_icon i {
+  font-size: 70px;
 }
 
-#cards .card p {
-  color: black;
+#custom_rating {
+  width: 100%;
+  height: 30vh;
+  background: url("http://el.commonsupport.com/newwp/lanong/wp-content/uploads/2020/08/featured-image-47.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-#cards h6 {
-  display: inline;
-  background: #77d693;
-  padding: 8px;
+#custom_rating .overlay {
+  background-color: rgba(50, 117, 183, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#custom_rating .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#custom_rating article {
+  text-align: center;
+  padding-right: 100px;
   color: white;
 }
-#cards h5 {
-  margin-top: 10px;
-}
-#cards .card-name {
+
+#destination h1 {
   text-align: center;
+  padding-top: 50px;
 }
-#cards .card-info {
-  text-align: center;
+#destination .container {
+  margin: 0 auto;
 }
-#cards .icon {
-  font-size: 20px;
-  text-align: center;
+#destination .container .card {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

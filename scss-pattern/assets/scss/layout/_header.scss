@@ -1,57 +1,74 @@
 header {
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
     background-color: white;
-    padding: 15px 0;
 
-    nav {
-      display: flex;
+    .container{
+        display: flex;
+       margin: 0 390px;
+       padding: 40px 15px;
 
-      .left {
-        padding-right: 200px;
+       
 
-        h1 {
-          a {
-            font-size: 30px;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: #77d693;
-          }
+       .col-lg-3{
+        padding: 0 15px;
+        display: flex;
+       }
+
+       .contact_icon{
+        margin-top: 2px;
+        margin-right: 5px;
+        text-align: center;
+        justify-content: center;
+        
+        i{
+            background-color:  $primarycolor;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding-top: 13px;
+            color: white;
+            
+        }
+        
+
+       }
+
+       .nav-btn {
+        background-color: transparent;
+        border: none;
+        i {
+          padding: 4px 12px;
+          color: gray;
+          font-size: 30;
         }
       }
+      
+       
+    
 
-      .right {
-        ul {
-          display: flex;
+    }
 
-          li {
-            padding: 10px 0 10px 30px;
+    nav{
+        background-color: $primarycolor;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0px;
 
-            a {
-              color: black;
+            li{
+                padding: 30px;
+                font-size: 25px;
+                a{
+                    color: white;
+                }
             }
-
-            &:first-child a {
-              color: #77d693;
-            }
-
-            &:hover a {
-              color: #77d693;
-              transition: 0.3s;
-            }
-          }
         }
-      }
     }
+  
 
-    .get-started-btn {
-      border: none;
-      background-color: #77d693;
-      padding: 8px 25px;
-      border-radius: 20px;
-      color: white;
-    }
-  }
 }
